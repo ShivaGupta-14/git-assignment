@@ -1,0 +1,54 @@
+Git Commands Used in Assignment
+Name: Shiva Gupta
+Roll No: 2024EB01339
+
+1. git init -b main
+   Initializes a new empty git repository in the current folder with main as the default branch.
+
+2. git status
+   Shows the current state of the working directory, like which files are modified, staged or untracked.
+
+3. git add index.html about.html
+   Adds the files to the staging area so they can be included in the next commit.
+
+4. git commit -m "Initial commit with index and about page"
+   Saves the staged changes to the repository with a message describing the change.
+
+5. git diff
+   Shows the line by line changes made in files that are not staged yet.
+
+6. git branch feature
+   Creates a new branch named feature from the current commit.
+
+7. git branch
+   Lists all the local branches. The current branch is marked with *.
+
+8. git checkout feature
+   Switches from the current branch to the feature branch.
+
+9. git checkout main
+   Switches back to the main branch.
+
+10. git merge --no-ff feature -m "Merged feature branch into main"
+    Merges the feature branch into main. --no-ff creates a merge commit so the branch history is visible.
+
+11. git log --oneline --graph --all
+    Shows the commit history of all branches in short form along with a graph of branches and merges.
+
+12. git log --oneline
+    Shows the commit history of the current branch with one line for each commit.
+
+13. git revert HEAD --no-edit
+    Undoes the last commit by creating a new commit that reverses its changes. History is not deleted so it is safe for shared repos.
+
+14. git remote add origin https://github.com/ShivaGupta-14/git-assignment.git
+    Connects the local repository to the remote repository on GitHub with the name origin.
+
+15. git remote -v
+    Shows the remote repositories connected to the local repo along with their URLs.
+
+16. git push -u origin main
+    Pushes the main branch to GitHub and sets origin/main as the upstream branch.
+
+17. git push origin feature
+    Pushes the feature branch to GitHub so the branch is also visible there.
